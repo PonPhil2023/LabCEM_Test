@@ -1,0 +1,8 @@
+parameter,value
+throat_radius,25.0
+mouth_width,180.0
+mouth_height,120.0
+depth,58.968
+wall_thickness,3.0
+waveguide_type,exponential
+curve_blend,0.55

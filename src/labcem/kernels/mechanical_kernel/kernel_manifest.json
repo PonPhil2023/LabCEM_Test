@@ -1,0 +1,12 @@
+﻿{
+  "kernel_name": "Mechanical Shape Kernel",
+  "kernel_id": "mechanical_kernel",
+  "version": "0.1.0",
+  "domain": "mechanical",
+  "description": "Stub mechanical kernel for plugin scanning.",
+  "entry_point": "labcem.kernels.mechanical_kernel.kernel:MechanicalShapeKernel",
+  "components": ["bracket"],
+  "default_backend": "python_sdf",
+  "supported_backends": ["python_sdf"],
+  "supported_exports": ["stl", "obj", "json"]
+}

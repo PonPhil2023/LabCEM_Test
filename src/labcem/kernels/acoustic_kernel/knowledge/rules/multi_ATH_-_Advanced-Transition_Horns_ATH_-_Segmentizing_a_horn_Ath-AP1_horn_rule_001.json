@@ -1,0 +1,9 @@
+{
+  "id": "acoustic_waveguide_rule_001",
+  "kernel_id": "acoustic_kernel",
+  "component_type": "horn",
+  "rule_type": "manufacturing_or_geometry",
+  "description": "FDM/printing constraints detected; ensure adequate wall thickness and flange support.",
+  "severity": "info",
+  "source_id": "multi_ATH_-_Advanced-Transition_Horns_ATH_-_Segmentizing_a_horn_Ath-AP1"
+}

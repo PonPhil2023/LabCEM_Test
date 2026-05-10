@@ -1,0 +1,26 @@
+{
+  "intent": "create_ath_waveguide",
+  "backend": "cadquery",
+  "shape": "waveguide",
+  "topology": {
+    "throat_open": true,
+    "mouth_open": true,
+    "watertight": null,
+    "non_manifold": null
+  },
+  "acoustic_checks": {
+    "area_ratio": 31.57640386223976,
+    "flare_smoothness_ok": true,
+    "target_band": [
+      1800.0,
+      10000.0
+    ]
+  },
+  "optimization": {
+    "acoustic_score": 84.21,
+    "manufacturability_score": 100.0,
+    "smoothness_score": 86.87,
+    "mesh_validity_score": 100.0,
+    "total_score": 91.85
+  }
+}

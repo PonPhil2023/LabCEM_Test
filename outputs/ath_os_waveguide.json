@@ -1,0 +1,15 @@
+{
+  "kind": "waveguide",
+  "params": {
+    "throat_radius": 12.7,
+    "mouth_radius": 52.5,
+    "depth": 35.0,
+    "wall_thickness": 3.0,
+    "waveguide_type": "oblate_spheroid",
+    "frequency_band": "2000-10000",
+    "throat_flange_shape": "round",
+    "throat_flange_size": 8.0,
+    "mouth_flange_shape": "ellipse",
+    "mouth_flange_size": 12.0
+  }
+}

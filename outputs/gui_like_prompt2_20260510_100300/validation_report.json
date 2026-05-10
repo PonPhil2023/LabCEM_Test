@@ -1,0 +1,16 @@
+{
+  "topology": {
+    "throat_open": true,
+    "mouth_open": true,
+    "watertight": null,
+    "non_manifold": null
+  },
+  "checks": {
+    "min_wall_thickness": 0.0,
+    "wall_thickness": 0.0,
+    "wall_ok": false,
+    "export_ready": false
+  },
+  "throat_open": true,
+  "mouth_open": true
+}

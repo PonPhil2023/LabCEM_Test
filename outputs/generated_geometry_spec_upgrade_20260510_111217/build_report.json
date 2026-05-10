@@ -1,0 +1,332 @@
+{
+  "intent": "create_ath_waveguide",
+  "backend": "cadquery",
+  "shape": "waveguide",
+  "topology": {
+    "throat_open": true,
+    "mouth_open": true,
+    "acoustic_path_clear": true,
+    "section_count": 56,
+    "min_section_area": 506.70747908301496,
+    "max_section_area": 8482.30016445,
+    "monotonic_area_check": true,
+    "min_wall_thickness_check": true,
+    "boundary_loop_count": 0,
+    "watertight_shell_check": true,
+    "non_manifold_edges": 96,
+    "ribs_not_blocking_path": true,
+    "z_span": [
+      -4.199999999999999,
+      46.17
+    ],
+    "probe_sections": [
+      {
+        "z_ratio": 0.0,
+        "path_clear": true
+      },
+      {
+        "z_ratio": 0.25,
+        "path_clear": true
+      },
+      {
+        "z_ratio": 0.5,
+        "path_clear": true
+      },
+      {
+        "z_ratio": 0.75,
+        "path_clear": true
+      },
+      {
+        "z_ratio": 1.0,
+        "path_clear": true
+      }
+    ]
+  },
+  "acoustic_checks": {
+    "area_ratio": 21.31407260701184,
+    "flare_smoothness_ok": true,
+    "target_band": [
+      2000.0,
+      12000.0
+    ]
+  },
+  "optimization": {
+    "bandwidth_score": 100.0,
+    "directivity_score": 100.0,
+    "smoothness_score": 96.57,
+    "manufacturability_score": 100.0,
+    "geometry_validity_score": 100.0,
+    "compactness_penalty": 0.0,
+    "total_score": 93.38,
+    "evaluation_mode": "rule_based_estimate"
+  },
+  "cem_mode": "target_driven_waveguide",
+  "input_requirements": {
+    "throat_diameter_mm": 25.4,
+    "throat_shape": "circle",
+    "f_low_hz": 2000.0,
+    "f_high_hz": 10000.0,
+    "horizontal_coverage_deg": 90.0,
+    "vertical_coverage_deg": 60.0,
+    "max_width_mm": 120.0,
+    "max_height_mm": 90.0,
+    "max_depth_mm": 75.0,
+    "min_wall_thickness_mm": 3.0,
+    "manufacturing_method": "FDM",
+    "preferred_profile_type": "r_osse"
+  },
+  "acoustic_target": {
+    "mode": "rule_based_estimate",
+    "mouth_width_mm": 120.0,
+    "mouth_height_mm": 90.0,
+    "aspect_ratio": 1.3333333333333333,
+    "depth_estimate_mm": 42.57,
+    "profile_hint": "r_osse_like",
+    "target_band": [
+      2000.0,
+      10000.0
+    ],
+    "target_coverage_deg": [
+      90.0,
+      60.0
+    ]
+  },
+  "selected_candidate": {
+    "candidate_id": "WG4",
+    "profile_type": "exponential",
+    "scores": {
+      "bandwidth_score": 100.0,
+      "directivity_score": 100.0,
+      "smoothness_score": 96.57,
+      "manufacturability_score": 100.0,
+      "geometry_validity_score": 100.0,
+      "compactness_penalty": 0.0,
+      "total_score": 93.38,
+      "evaluation_mode": "rule_based_estimate"
+    }
+  },
+  "candidate_scores": [
+    {
+      "candidate_id": "WG4",
+      "profile_type": "exponential",
+      "scores": {
+        "bandwidth_score": 100.0,
+        "directivity_score": 100.0,
+        "smoothness_score": 96.57,
+        "manufacturability_score": 100.0,
+        "geometry_validity_score": 100.0,
+        "compactness_penalty": 0.0,
+        "total_score": 93.38,
+        "evaluation_mode": "rule_based_estimate"
+      },
+      "target_depth_mm": 38.313
+    },
+    {
+      "candidate_id": "WG5",
+      "profile_type": "exponential",
+      "scores": {
+        "bandwidth_score": 100.0,
+        "directivity_score": 100.0,
+        "smoothness_score": 96.57,
+        "manufacturability_score": 100.0,
+        "geometry_validity_score": 100.0,
+        "compactness_penalty": 0.0,
+        "total_score": 93.38,
+        "evaluation_mode": "rule_based_estimate"
+      },
+      "target_depth_mm": 42.57
+    },
+    {
+      "candidate_id": "WG6",
+      "profile_type": "exponential",
+      "scores": {
+        "bandwidth_score": 100.0,
+        "directivity_score": 100.0,
+        "smoothness_score": 96.57,
+        "manufacturability_score": 100.0,
+        "geometry_validity_score": 100.0,
+        "compactness_penalty": 0.0,
+        "total_score": 93.38,
+        "evaluation_mode": "rule_based_estimate"
+      },
+      "target_depth_mm": 45.976
+    },
+    {
+      "candidate_id": "WG7",
+      "profile_type": "bezier",
+      "scores": {
+        "bandwidth_score": 100.0,
+        "directivity_score": 100.0,
+        "smoothness_score": 94.3,
+        "manufacturability_score": 100.0,
+        "geometry_validity_score": 100.0,
+        "compactness_penalty": 0.0,
+        "total_score": 92.97,
+        "evaluation_mode": "rule_based_estimate"
+      },
+      "target_depth_mm": 38.313
+    },
+    {
+      "candidate_id": "WG8",
+      "profile_type": "bezier",
+      "scores": {
+        "bandwidth_score": 100.0,
+        "directivity_score": 100.0,
+        "smoothness_score": 94.3,
+        "manufacturability_score": 100.0,
+        "geometry_validity_score": 100.0,
+        "compactness_penalty": 0.0,
+        "total_score": 92.97,
+        "evaluation_mode": "rule_based_estimate"
+      },
+      "target_depth_mm": 42.57
+    },
+    {
+      "candidate_id": "WG9",
+      "profile_type": "bezier",
+      "scores": {
+        "bandwidth_score": 100.0,
+        "directivity_score": 100.0,
+        "smoothness_score": 94.3,
+        "manufacturability_score": 100.0,
+        "geometry_validity_score": 100.0,
+        "compactness_penalty": 0.0,
+        "total_score": 92.97,
+        "evaluation_mode": "rule_based_estimate"
+      },
+      "target_depth_mm": 45.976
+    },
+    {
+      "candidate_id": "WG13",
+      "profile_type": "superellipse_loft",
+      "scores": {
+        "bandwidth_score": 100.0,
+        "directivity_score": 100.0,
+        "smoothness_score": 89.36,
+        "manufacturability_score": 100.0,
+        "geometry_validity_score": 100.0,
+        "compactness_penalty": 0.0,
+        "total_score": 92.09,
+        "evaluation_mode": "rule_based_estimate"
+      },
+      "target_depth_mm": 38.313
+    },
+    {
+      "candidate_id": "WG14",
+      "profile_type": "superellipse_loft",
+      "scores": {
+        "bandwidth_score": 100.0,
+        "directivity_score": 100.0,
+        "smoothness_score": 89.36,
+        "manufacturability_score": 100.0,
+        "geometry_validity_score": 100.0,
+        "compactness_penalty": 0.0,
+        "total_score": 92.09,
+        "evaluation_mode": "rule_based_estimate"
+      },
+      "target_depth_mm": 42.57
+    }
+  ],
+  "evaluation_mode": "rule_based_estimate",
+  "mesh_validation": {
+    "topology": {
+      "throat_open": true,
+      "mouth_open": true,
+      "acoustic_path_clear": true,
+      "section_count": 56,
+      "min_section_area": 506.70747908301496,
+      "max_section_area": 8482.30016445,
+      "monotonic_area_check": true,
+      "min_wall_thickness_check": true,
+      "boundary_loop_count": 0,
+      "watertight_shell_check": true,
+      "non_manifold_edges": 96,
+      "ribs_not_blocking_path": true,
+      "z_span": [
+        -4.199999999999999,
+        46.17
+      ],
+      "probe_sections": [
+        {
+          "z_ratio": 0.0,
+          "path_clear": true
+        },
+        {
+          "z_ratio": 0.25,
+          "path_clear": true
+        },
+        {
+          "z_ratio": 0.5,
+          "path_clear": true
+        },
+        {
+          "z_ratio": 0.75,
+          "path_clear": true
+        },
+        {
+          "z_ratio": 1.0,
+          "path_clear": true
+        }
+      ]
+    },
+    "checks": {
+      "export_ready": true,
+      "wall_thickness": 3.0,
+      "min_wall_thickness": 3.0,
+      "wall_ok": true
+    },
+    "throat_open": true,
+    "mouth_open": true,
+    "acoustic_path_clear": true,
+    "section_count": 56,
+    "min_section_area": 506.70747908301496,
+    "max_section_area": 8482.30016445,
+    "monotonic_area_check": true,
+    "min_wall_thickness_check": true,
+    "boundary_loop_count": 0,
+    "watertight_shell_check": true,
+    "non_manifold_edges": 96
+  },
+  "profile_samples": [
+    {
+      "t": 0.0,
+      "rx": 12.7,
+      "ry": 12.7
+    },
+    {
+      "t": 0.25,
+      "rx": 18.856271,
+      "ry": 17.524807
+    },
+    {
+      "t": 0.5,
+      "rx": 27.996769,
+      "ry": 24.182586
+    },
+    {
+      "t": 0.75,
+      "rx": 40.410959,
+      "ry": 32.610916
+    },
+    {
+      "t": 1.0,
+      "rx": 60.0,
+      "ry": 45.0
+    }
+  ],
+  "export_status": {
+    "stl": "ok",
+    "obj": "ok",
+    "step": "not_implemented",
+    "3mf": "not_implemented"
+  },
+  "geometry_backend": "mesh_loft",
+  "waveguide_surface": "section_loft",
+  "marching_cubes_used": false,
+  "validation_summary": {
+    "throat_open": true,
+    "mouth_open": true,
+    "acoustic_path_clear": true,
+    "closed_port": null
+  }
+}

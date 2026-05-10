@@ -1,0 +1,92 @@
+{
+  "spec": "我要設計ATH波導",
+  "domain": "general",
+  "intent": "create_ath_waveguide",
+  "backend": "cadquery",
+  "shape": "waveguide",
+  "parameters": {
+    "frequency_band": {
+      "value": null,
+      "unit": "Hz",
+      "required": true
+    },
+    "waveguide_type": {
+      "value": null,
+      "unit": "enum",
+      "required": true
+    },
+    "throat_diameter": {
+      "value": null,
+      "unit": "mm",
+      "required": true
+    },
+    "mouth_width": {
+      "value": null,
+      "unit": "mm",
+      "required": true
+    },
+    "mouth_height": {
+      "value": null,
+      "unit": "mm",
+      "required": true
+    },
+    "depth": {
+      "value": 35.0,
+      "unit": "mm",
+      "required": true
+    },
+    "throat_flange_shape": {
+      "value": "round",
+      "unit": "enum",
+      "required": false
+    },
+    "throat_flange_size": {
+      "value": 0.0,
+      "unit": "mm",
+      "required": false
+    },
+    "mouth_flange_shape": {
+      "value": "round",
+      "unit": "enum",
+      "required": false
+    },
+    "mouth_flange_size": {
+      "value": 0.0,
+      "unit": "mm",
+      "required": false
+    },
+    "wall_thickness": {
+      "value": null,
+      "unit": "mm",
+      "required": true
+    }
+  },
+  "operations": [
+    {
+      "op": "shell",
+      "thickness": 3.0
+    },
+    {
+      "op": "fillet_edges",
+      "radius": 5.0
+    }
+  ],
+  "missing_required": [
+    "frequency_band",
+    "waveguide_type",
+    "throat_diameter",
+    "mouth_width",
+    "mouth_height",
+    "wall_thickness"
+  ],
+  "questions": [
+    "請提供目標頻段 (例: 2000-10000 Hz)",
+    "請選擇波導型式 (oblate_spheroid/exponential/tractrix)",
+    "請提供喉口直徑 (mm)",
+    "請提供波導出口寬度 (mm)",
+    "請提供波導出口高度 (mm)",
+    "請提供薄殼厚度 (mm)"
+  ],
+  "status": "needs_input",
+  "research_excerpt": ""
+}

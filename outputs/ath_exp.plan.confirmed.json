@@ -1,0 +1,78 @@
+{
+  "spec": "我要設計ATH波導",
+  "domain": "general",
+  "intent": "create_ath_waveguide",
+  "backend": "cadquery",
+  "shape": "waveguide",
+  "parameters": {
+    "frequency_band": {
+      "value": "2000-10000",
+      "unit": "Hz",
+      "required": true
+    },
+    "waveguide_type": {
+      "value": "exponential",
+      "unit": "enum",
+      "required": true
+    },
+    "throat_diameter": {
+      "value": 25.4,
+      "unit": "mm",
+      "required": true
+    },
+    "mouth_width": {
+      "value": 120.0,
+      "unit": "mm",
+      "required": true
+    },
+    "mouth_height": {
+      "value": 90.0,
+      "unit": "mm",
+      "required": true
+    },
+    "depth": {
+      "value": 35.0,
+      "unit": "mm",
+      "required": true
+    },
+    "throat_flange_shape": {
+      "value": "round",
+      "unit": "enum",
+      "required": false
+    },
+    "throat_flange_size": {
+      "value": 8.0,
+      "unit": "mm",
+      "required": false
+    },
+    "mouth_flange_shape": {
+      "value": "ellipse",
+      "unit": "enum",
+      "required": false
+    },
+    "mouth_flange_size": {
+      "value": 12.0,
+      "unit": "mm",
+      "required": false
+    },
+    "wall_thickness": {
+      "value": 3.0,
+      "unit": "mm",
+      "required": true
+    }
+  },
+  "operations": [
+    {
+      "op": "shell",
+      "thickness": 3.0
+    },
+    {
+      "op": "fillet_edges",
+      "radius": 5.0
+    }
+  ],
+  "missing_required": [],
+  "questions": [],
+  "status": "ready",
+  "research_excerpt": ""
+}

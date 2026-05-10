@@ -1,0 +1,10 @@
+{
+  "version": "1",
+  "pid": 22248,
+  "base_url": "http://127.0.0.1:45111",
+  "auth_token": "4abbd5e40f20d67b688554c04ee32ab45d50b2875146217d",
+  "started_at": "2026-05-10T20:33:01.138+08:00",
+  "runtime_dir": "D:\\Code\\CEM_Test\\Label9_runtime",
+  "script_path": "D:\\Code\\Label9_desktop-windows_fix\\Electron_app\\src\\launcher\\server.js",
+  "source_mtime_ms": 1777105500000
+}

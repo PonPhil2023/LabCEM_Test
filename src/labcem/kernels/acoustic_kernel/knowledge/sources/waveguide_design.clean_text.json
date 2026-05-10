@@ -1,0 +1,15 @@
+{
+  "source_id": "waveguide_design",
+  "kernel_id": "acoustic_kernel",
+  "source_files": [
+    {
+      "path": "docs\\waveguide_design.md",
+      "type": "md",
+      "status": "ok",
+      "chars": 367
+    }
+  ],
+  "combined_text": "# SOURCE: waveguide_design.md\n﻿# Waveguide Design Notes\n\nA waveguide has a throat, mouth, depth, wall thickness, flange, and flare profile.\nThe mouth can use a superellipse profile.\nThe design may target horizontal directivity and vertical directivity.\nThe throat diameter is the inlet diameter.\nThe mouth width and mouth height define the outlet.\nFDM printing requires sufficient wall thickness.",
+  "created_at": "2026-05-10T13:41:14.496389Z",
+  "errors": []
+}

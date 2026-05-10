@@ -1,0 +1,18 @@
+{
+  "kind": "cylinder",
+  "params": {
+    "radius": 10.0,
+    "height": 40.0,
+    "center": [
+      0,
+      0,
+      0
+    ],
+    "direction": [
+      0,
+      0,
+      1
+    ],
+    "segments": 64
+  }
+}

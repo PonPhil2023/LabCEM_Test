@@ -1,0 +1,171 @@
+{
+  "spec": "建立一個出口為矩形120X80mm 喉口為圓形直徑50mm 波導適用頻寬為2k~20k Hz 波導薄殼厚度為3mm 法蘭為端口形狀向外延伸12mm",
+  "domain": "general",
+  "intent": "create_ath_waveguide",
+  "backend": "cadquery",
+  "shape": "waveguide",
+  "parameters": {
+    "frequency_band": {
+      "value": "2000-20000",
+      "unit": "Hz",
+      "required": true
+    },
+    "waveguide_type": {
+      "value": "tractrix",
+      "unit": "enum",
+      "required": false
+    },
+    "throat_diameter": {
+      "value": 80.0,
+      "unit": "mm",
+      "required": true
+    },
+    "mouth_shape": {
+      "value": "rect",
+      "unit": "enum",
+      "required": true
+    },
+    "mouth_width": {
+      "value": 50.0,
+      "unit": "mm",
+      "required": true
+    },
+    "mouth_height": {
+      "value": 3.0,
+      "unit": "mm",
+      "required": true
+    },
+    "depth": {
+      "value": 12.0,
+      "unit": "mm",
+      "required": true
+    },
+    "roundover_radius": {
+      "value": 6.0,
+      "unit": "mm",
+      "required": false
+    },
+    "throat_flange_shape": {
+      "value": "round",
+      "unit": "enum",
+      "required": false
+    },
+    "throat_flange_size": {
+      "value": 6.0,
+      "unit": "mm",
+      "required": false
+    },
+    "mouth_flange_shape": {
+      "value": "round",
+      "unit": "enum",
+      "required": false
+    },
+    "mouth_flange_size": {
+      "value": 10.0,
+      "unit": "mm",
+      "required": false
+    },
+    "wall_thickness": {
+      "value": 3.0,
+      "unit": "mm",
+      "required": true
+    },
+    "baffle_width": {
+      "value": 180.0,
+      "unit": "mm",
+      "required": false
+    },
+    "baffle_height": {
+      "value": 180.0,
+      "unit": "mm",
+      "required": false
+    },
+    "baffle_thickness": {
+      "value": 6.0,
+      "unit": "mm",
+      "required": false
+    },
+    "screw_count": {
+      "value": 4,
+      "unit": "count",
+      "required": false
+    },
+    "screw_diameter": {
+      "value": 4.2,
+      "unit": "mm",
+      "required": false
+    },
+    "screw_spacing": {
+      "value": 150.0,
+      "unit": "mm",
+      "required": false
+    },
+    "manufacturing_method": {
+      "value": "FDM",
+      "unit": "enum",
+      "required": false
+    },
+    "min_wall_thickness": {
+      "value": 3.0,
+      "unit": "mm",
+      "required": false
+    }
+  },
+  "operations": [
+    {
+      "op": "shell",
+      "thickness": 3.0
+    },
+    {
+      "op": "fillet_edges",
+      "radius": 5.0
+    }
+  ],
+  "missing_required": [],
+  "questions": [],
+  "status": "ready",
+  "research_excerpt": "",
+  "specification": {
+    "part_type": "acoustic_waveguide",
+    "design_intent": {
+      "application": "acoustic_directivity_control",
+      "target_band": "2000-20000",
+      "waveguide_type": "tractrix",
+      "manufacturing": "FDM"
+    },
+    "geometry": {
+      "throat_diameter": 80.0,
+      "mouth_width": 50.0,
+      "mouth_height": 3.0,
+      "mouth_shape": "rect",
+      "depth": 12.0,
+      "roundover_radius": 6.0,
+      "wall_thickness": 3.0,
+      "profile_type": "tractrix",
+      "throat_flange_shape": "round",
+      "throat_flange_size": 6.0,
+      "mouth_flange_shape": "round",
+      "mouth_flange_size": 10.0,
+      "front_only": true,
+      "reinforcement_style": "radial_ribs",
+      "reinforcement_count": 6,
+      "reinforcement_thickness": 2.5
+    },
+    "mounting": {
+      "baffle_width": 180.0,
+      "baffle_height": 180.0,
+      "baffle_thickness": 6.0,
+      "screw_count": 4,
+      "screw_diameter": 4.2,
+      "screw_spacing": 150.0
+    },
+    "constraints": {
+      "min_wall_thickness": 3.0,
+      "watertight_required": true,
+      "avoid_sharp_edges": true
+    },
+    "output": {
+      "format": "STL"
+    }
+  }
+}

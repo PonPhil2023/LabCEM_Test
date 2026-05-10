@@ -1,0 +1,48 @@
+{
+  "spec": "ATH waveguide，throat 25.4mm，mouth 120mm，depth 35mm",
+  "domain": "general",
+  "intent": "create_ath_waveguide",
+  "backend": "cadquery",
+  "shape": "waveguide",
+  "parameters": {
+    "throat_diameter": {
+      "value": 25.4,
+      "unit": "mm",
+      "required": true
+    },
+    "mouth_diameter": {
+      "value": 120.0,
+      "unit": "mm",
+      "required": true
+    },
+    "depth": {
+      "value": 35.0,
+      "unit": "mm",
+      "required": true
+    },
+    "wall_thickness": {
+      "value": 3.2,
+      "unit": "mm",
+      "required": false
+    },
+    "profile": {
+      "value": "oblate_spheroid",
+      "unit": "enum",
+      "required": false
+    }
+  },
+  "operations": [
+    {
+      "op": "shell",
+      "thickness": 3.0
+    },
+    {
+      "op": "fillet_edges",
+      "radius": 4.0
+    }
+  ],
+  "missing_required": [],
+  "questions": [],
+  "status": "ready",
+  "research_excerpt": ""
+}

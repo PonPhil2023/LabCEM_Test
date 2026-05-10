@@ -1,0 +1,8 @@
+{
+  "description": "General engineering domain baseline constraints for LabCEM scaffold.",
+  "constraints": {
+    "min_wall_thickness": 1.0,
+    "max_overhang_deg": 45,
+    "target_mass_range": [0.1, 10.0]
+  }
+}

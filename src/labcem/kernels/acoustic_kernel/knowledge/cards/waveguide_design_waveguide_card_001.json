@@ -1,0 +1,30 @@
+{
+  "id": "acoustic_waveguide_card_001",
+  "kernel_id": "acoustic_kernel",
+  "domain": "acoustic",
+  "component_type": "waveguide",
+  "knowledge_type": "geometry_rule",
+  "title": "Detected waveguide design knowledge",
+  "summary": "Detected 1 component keywords and 11 waveguide parameter keywords.",
+  "parameters": {
+    "throat": true,
+    "mouth": true,
+    "depth": true,
+    "width": true,
+    "height": true,
+    "directivity": true,
+    "flare": true,
+    "profile": true,
+    "superellipse": true,
+    "wall thickness": true,
+    "flange": true
+  },
+  "formulas": [],
+  "implementation_hints": [
+    "Enforce minimum wall thickness for manufacturability.",
+    "Keep directivity targets in solve_parameters()."
+  ],
+  "source_id": "waveguide_design",
+  "confidence": 0.5,
+  "review_status": "pending"
+}

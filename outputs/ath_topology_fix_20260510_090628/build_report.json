@@ -1,0 +1,50 @@
+{
+  "intent": "create_ath_waveguide",
+  "backend": "cadquery",
+  "shape": "waveguide",
+  "topology": {
+    "throat_open": true,
+    "mouth_open": true,
+    "watertight": null,
+    "non_manifold": null,
+    "acoustic_path_clear": true,
+    "front_only": true,
+    "closed_port": false,
+    "radial_ribs_generated": true,
+    "wall_thickness_ok": true
+  },
+  "acoustic_checks": {
+    "area_ratio": 11.000789666511805,
+    "flare_smoothness_ok": true,
+    "target_band": [
+      2000.0,
+      20000.0
+    ]
+  },
+  "optimization": {
+    "acoustic_score": 88.39,
+    "manufacturability_score": 100.0,
+    "smoothness_score": 73.56,
+    "mesh_validity_score": 100.0,
+    "total_score": 90.65
+  },
+  "mesh_validation": {
+    "topology": {
+      "throat_open": true,
+      "mouth_open": true,
+      "watertight": null,
+      "non_manifold": null,
+      "acoustic_path_clear": true,
+      "front_only": true,
+      "closed_port": false,
+      "radial_ribs_generated": true,
+      "wall_thickness_ok": true
+    },
+    "checks": {
+      "min_wall_thickness": 3.0,
+      "wall_thickness": 3.0,
+      "wall_ok": true,
+      "export_ready": true
+    }
+  }
+}

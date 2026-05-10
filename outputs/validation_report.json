@@ -1,0 +1,24 @@
+{
+  "required_fields_ok": true,
+  "dimension_range_ok": true,
+  "wall_thickness_ok": true,
+  "mesh_exists_ok": true,
+  "export_success_ok": true,
+  "backend": "python_sdf",
+  "bbox": {
+    "x": [
+      -105.0,
+      105.0
+    ],
+    "y": [
+      -75.0,
+      75.0
+    ],
+    "z": [
+      -8.0,
+      101.0
+    ]
+  },
+  "issues": [],
+  "valid": true
+}

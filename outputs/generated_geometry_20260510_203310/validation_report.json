@@ -1,0 +1,59 @@
+{
+  "topology": {
+    "throat_open": true,
+    "mouth_open": true,
+    "acoustic_path_clear": true,
+    "section_count": 56,
+    "min_section_area": 1963.4954084375,
+    "max_section_area": 9456.614165926008,
+    "monotonic_area_check": true,
+    "min_wall_thickness_check": true,
+    "boundary_loop_count": 0,
+    "watertight_shell_check": true,
+    "non_manifold_edges": 0,
+    "ribs_not_blocking_path": true,
+    "z_span": [
+      0.0,
+      36.0
+    ],
+    "probe_sections": [
+      {
+        "z_ratio": 0.0,
+        "path_clear": true
+      },
+      {
+        "z_ratio": 0.25,
+        "path_clear": true
+      },
+      {
+        "z_ratio": 0.5,
+        "path_clear": true
+      },
+      {
+        "z_ratio": 0.75,
+        "path_clear": true
+      },
+      {
+        "z_ratio": 1.0,
+        "path_clear": true
+      }
+    ]
+  },
+  "checks": {
+    "export_ready": true,
+    "wall_thickness": 3.0,
+    "min_wall_thickness": 3.0,
+    "wall_ok": true
+  },
+  "throat_open": true,
+  "mouth_open": true,
+  "acoustic_path_clear": true,
+  "section_count": 56,
+  "min_section_area": 1963.4954084375,
+  "max_section_area": 9456.614165926008,
+  "monotonic_area_check": true,
+  "min_wall_thickness_check": true,
+  "boundary_loop_count": 0,
+  "watertight_shell_check": true,
+  "non_manifold_edges": 0
+}

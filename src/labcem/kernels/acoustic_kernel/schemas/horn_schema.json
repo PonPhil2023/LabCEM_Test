@@ -1,0 +1,14 @@
+{
+  "kernel_id": "acoustic_kernel",
+  "domain": "acoustic",
+  "component_type": "horn",
+  "display_name": "Horn",
+  "aliases": [
+    "horn"
+  ],
+  "parameters": {},
+  "generated_from": [
+    "D:\\Code\\CEM_Test\\src\\labcem\\kernels\\acoustic_kernel\\knowledge\\cards\\multi_ATH_-_Advanced-Transition_Horns_ATH_-_Segmentizing_a_horn_Ath-AP1_horn_card_001.json"
+  ],
+  "created_at": "2026-05-10T14:27:37.781773Z"
+}

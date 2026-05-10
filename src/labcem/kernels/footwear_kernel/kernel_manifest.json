@@ -1,0 +1,12 @@
+﻿{
+  "kernel_name": "Footwear Shape Kernel",
+  "kernel_id": "footwear_kernel",
+  "version": "0.1.0",
+  "domain": "footwear",
+  "description": "Stub footwear kernel for plugin scanning.",
+  "entry_point": "labcem.kernels.footwear_kernel.kernel:FootwearShapeKernel",
+  "components": ["midsole"],
+  "default_backend": "python_sdf",
+  "supported_backends": ["python_sdf"],
+  "supported_exports": ["stl", "obj", "json"]
+}

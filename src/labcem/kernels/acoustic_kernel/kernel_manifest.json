@@ -1,0 +1,12 @@
+﻿{
+  "kernel_name": "Acoustic Shape Kernel",
+  "kernel_id": "acoustic_kernel",
+  "version": "0.1.0",
+  "domain": "acoustic",
+  "description": "Acoustic components including waveguide, horn, diffuser, cavity, and port.",
+  "entry_point": "labcem.kernels.acoustic_kernel.kernel:AcousticShapeKernel",
+  "components": ["waveguide", "horn", "diffuser", "cavity", "port"],
+  "default_backend": "python_sdf",
+  "supported_backends": ["python_sdf", "mesh_sdf", "picogk", "openvdb"],
+  "supported_exports": ["stl", "obj", "json"]
+}
